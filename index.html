@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Avancé</title>
+  <link rel="stylesheet" href="./CSS/styles.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#intro">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <div class="intro-content">
+      <img src="votre-photo.jpg" alt="Votre Photo" class="profile-pic">
+      <h1>Votre Nom</h1>
+      <p>Développeur Web | Designer | Passionné de Technologie</p>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>À propos de moi</h2>
+    <p>Je suis un développeur web expérimenté...</p>
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2>Mes Projets</h2>
+    <div class="project" data-aos="flip-left">
+      <h3>Projet 1</h3>
+      <p>Description du projet.</p>
+    </div>
+    <div class="project" data-aos="flip-right">
+      <h3>Projet 2</h3>
+      <p>Description du projet.</p>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contactez-moi</h2>
+    <form>
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

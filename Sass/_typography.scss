@@ -1,0 +1,21 @@
+@use './variables';
+
+h1, h2, h3, h4, h5, h6 {
+  color: variables.$text-color;
+  font-family: variables.$font-family;
+  margin: 0 0 1rem;
+}
+
+p {
+  color: variables.$text-color;
+  margin: 0 0 1rem;
+}
+
+a {
+  color: variables.$primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: variables.$secondary-color;
+  }
+}

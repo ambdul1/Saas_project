@@ -1,0 +1,7 @@
+
+@mixin styles() {
+  [data-aos] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+}

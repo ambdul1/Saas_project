@@ -1,0 +1,20 @@
+@use './variables' as *;
+@use './mixins';
+@use './typography';
+@use './animations';
+@use './header';
+@use './intro';
+@use './sections';
+
+// Application des styles globaux
+body {
+  font-family: $font-family;
+  margin: 0;
+  line-height: 1.6;
+  background-color: $background-color;
+}
+
+@include header.styles();
+@include intro.styles();
+@include sections.styles();
+@include animations.styles();

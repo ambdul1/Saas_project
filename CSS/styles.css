@@ -1,0 +1,153 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "Arial", sans-serif;
+  margin: 0 0 1rem;
+}
+
+p {
+  color: #333;
+  margin: 0 0 1rem;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #2ecc71;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #009dff;
+  z-index: 1000;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-direction:row;
+}
+@media (max-width: 768px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #3498db;
+  }
+}
+header nav ul.active {
+  display: flex;
+}
+header .menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  header .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+header .menu-toggle:hover {
+  color: #2ecc71;
+}
+
+#intro {
+  height: 100vh;
+  background: url("../votre-photo.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+#intro .profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  #intro .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+#intro h1 {
+  font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+  #intro h1 {
+    font-size: 2rem;
+  }
+}
+#intro p {
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  #intro p {
+    font-size: 1rem;
+  }
+}
+
+#about, #projects, #contact {
+  padding: 2rem;
+  background: white;
+  margin: 2rem 0;
+}
+#about h2, #projects h2, #contact h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#about .project, #projects .project, #contact .project {
+  background: #2ecc71;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+#about form, #projects form, #contact form {
+  display: flex;
+  flex-direction: column;
+}
+#about form input, #about form textarea, #about form button, #projects form input, #projects form textarea, #projects form button, #contact form input, #contact form textarea, #contact form button {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+#about form button, #projects form button, #contact form button {
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+#about form button:hover, #projects form button:hover, #contact form button:hover {
+  background: rgb(95.3179916318, 173.9790794979, 226.6820083682);
+}
+
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */

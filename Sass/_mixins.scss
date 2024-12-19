@@ -1,0 +1,17 @@
+@use './variables';
+// Centre un élément en flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Media queries
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == sm {
+      @media (max-width: variables.$breakpoint-sm) { @content; }
+    } @else if $breakpoint == md {
+      @media (max-width: variables.$breakpoint-md) { @content; }
+    }
+  }
+  
