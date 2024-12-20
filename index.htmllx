@@ -14,12 +14,10 @@
 <body>
   <header>
     <nav>
-      <!-- <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-       -->
+      <!-- <div class="menu-toggle"></div> -->
+       <span></span>
+       <span></span>
+       <span></span>
       <ul>
         <li><a href="#intro">Accueil</a></li>
         <li><a href="#about">À propos</a></li>
@@ -29,11 +27,11 @@
     </nav>
   </header>
 
-  <section id="intro" style="text-align: center;">
+  <section id="intro">
     <div class="intro-content">
-      <img src="./assets/ANZIZ.jpeg" alt="Ma Photo" class="profile-pic" style="border-radius: 600px; width: 400px; margin: 10px 10px;">
-      <h1 style="text-align: center;">Ambdul Anziz Ibn Mahamoud</h1>
-      <p style="text-align: center;">Je suis un étudiant en Informatique à l'INSI</p>
+      <img src="./assets/ANZIZ.jpeg" alt="Ma Photo" class="profile-pic">
+    <h1>Ambdul Anziz Ibn Mahamoud</h1>
+      <p>Je suis un étudiant en Informatique a l'INSI(Institut Nationnal Supérieure d'Informatique)</p>
     </div>
   </section>
 
@@ -49,10 +47,13 @@
     <p>Dans mes études à l’INSI, je souhaite me spécialiser davantage et me préparer à travailler dans une entreprise digne de ce nom. Mon objectif est de devenir un expert dans mon domaine, capable de contribuer à des projets d’envergure et d’innover dans des secteurs technologiques stratégiques. Cette ambition guide mes choix et ma discipline quotidienne.</p>
     <p>L’avenir, à mes yeux, est une toile blanche sur laquelle je souhaite dessiner des solutions technologiques qui allient progrès et respect des valeurs humaines. Je rêve de travailler dans une entreprise qui partage cette vision, où je pourrai mettre en pratique les compétences et l’expérience acquises au fil des années.</p>
     <p>En somme, mon parcours est celui d’un jeune passionné par l’informatique, profondément attaché à ses racines et déterminé à construire un avenir brillant. Avec le soutien de ma famille, mes efforts constants et ma soif d’apprendre, je suis convaincu que je parviendrai à atteindre mes objectifs, étape par étape, dans ce monde en constante évolution.</p>
+
+
   </section>
 
   <section id="projects" data-aos="zoom-in">
     <h2>Mes Projets</h2>
+    
     <div class="project" data-aos="flip-left">
         <h3>Apprentissage du Développement Web</h3>
         <p>Je travaille actuellement sur des projets simples pour maîtriser HTML, CSS, et JavaScript. Ces projets incluent la création de pages web interactives et bien structurées. J'explore également l'utilisation de SASS pour optimiser la gestion des styles.</p>
@@ -92,7 +93,7 @@
         <h3>Organisation et Planification</h3>
         <p>Un projet clé est l'élaboration d'un calendrier d'apprentissage structuré. Ce projet vise à équilibrer mes études universitaires, mes projets personnels et mon développement de compétences.</p>
     </div>
-  </section>
+</section>
 
   <section id="contact" data-aos="fade-up">
     <h2>Contactez-moi</h2>

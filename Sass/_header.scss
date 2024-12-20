@@ -1,5 +1,5 @@
-@use './mixins';
-@use './variables' as *;
+@import './mixins';
+@import './variables';
 
 @mixin styles() {
   header {
@@ -10,14 +10,14 @@
     z-index: 1000;
 
     nav ul {
-      @include mixins.flex-center;
+      @include flex-center;
       list-style: none;
       margin: 0;
       padding: 0;
       flex-direction: row;
 
-      @include mixins.respond-to(sm) {
-        display: none;
+      @include respond-to(sm) { 
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -30,11 +30,59 @@
         display: flex;
       }
     }
+    /* Styles pour le menu normal sur écrans larges */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+}
+
+/* Masquer le menu normal sur les petits écrans (mobile/tablette) */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Affichage normal du menu sur les écrans larges */
+@media (min-width: 769px) {
+  nav ul {
+    display: flex; /* Affiche le menu horizontal */
+  }
+
+  .menu-toggle {
+    display: none; /* Cache le menu hamburger sur les écrans larges */
+  }
+}
 
     .menu-toggle {
       display: none;
 
-      @include mixins.respond-to(sm) {
+      @include respond-to(sm) {  
         display: block;
         cursor: pointer;
         padding: 1rem;
@@ -43,7 +91,7 @@
       }
 
       &:hover {
-        color: $secondary-color;
+        color: $secondary-color; 
       }
     }
   }

@@ -1,12 +1,11 @@
-@use './variables' as *;
-@use './mixins';
-@use './typography';
-@use './animations';
-@use './header';
-@use './intro';
-@use './sections';
+@import './variables';
+@import './mixins';
+@import './intro';
+@import './typography';
+@import './animations';
+@import './header';
+@import './sections';
 
-// Application des styles globaux
 body {
   font-family: $font-family;
   margin: 0;
@@ -14,7 +13,9 @@ body {
   background-color: $background-color;
 }
 
-@include header.styles();
-@include intro.styles();
-@include sections.styles();
-@include animations.styles();
+// @include header.styles();
+// @include intro.styles();
+// @include sections.styles();
+// @include animations.styles();
+
+  @include styles();
