@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #00ffff;
+  background-color: #28c3df;
   line-height: 1.6;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 }
 
 #projects {
-  background: #00ffff;
+  background: #28c3df;
   padding: 2rem;
   border-radius: 8px;
 }
@@ -81,7 +81,7 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   line-height: 1.6;
-  background-color: #00ffff;
+  background-color: #28c3df;
 }
 
 #about, #projects, #contact {
